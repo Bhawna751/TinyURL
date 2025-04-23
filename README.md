@@ -16,3 +16,19 @@ flowchart LR
     A -- Create url, Redirect url, Delete url --> B --Shorten a URL, Redirect a short URL, Delete a short URL --> C
      B --> A
 ```
+### APIs
+#### Create (POST): 
+```
+POST : {{tiny-url-api-host}}/api/v1/tinyurl
+```
+
+#### Redirect (GET): 
+```
+GET : {{Host}}/{tiny-url}
+```
+
+#### Delete (Delete): 
+```
+DELETE : {{Host}}/api/v1/tinyurl/{tiny-url}
+```
+Response: 204 http status code with no content
