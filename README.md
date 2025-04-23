@@ -56,3 +56,9 @@ flowchart LR
    C1 & C2 & C3 -.-> D
  C1 & C2 & C3 & Cn --> zookeeper
 ```
+
+Tech Stack Used:
+ - Application logic in [Spring Boot](https://spring.io/projects/spring-boot)
+ - [MySQL db](https://dev.mysql.com/doc/refman/8.4/en/what-is-mysql.html)
+ - [Redis](https://redis.io/docs/latest/) for cache
+ - [Apache Zookeeper](https://zookeeper.apache.org/)
