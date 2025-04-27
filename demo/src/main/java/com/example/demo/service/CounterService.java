@@ -3,7 +3,9 @@ package com.example.demo.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.support.atomic.RedisAtomicLong;
+import org.springframework.stereotype.Service;
 
+@Service
 public class CounterService {
     private static final String COUNTER_KEY = "url:counter"; // store a continuously incrementing number in Redis.
 
