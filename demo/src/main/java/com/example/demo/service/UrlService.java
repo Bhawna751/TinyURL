@@ -15,7 +15,7 @@ public class UrlService {
     @Autowired
     private UrlRepository urlRepository;
 
-    @Autowired
+    @Autowired(required = false)
     private CounterService counterService;
 
     public String getOriginalUrl(String shortUrl){
